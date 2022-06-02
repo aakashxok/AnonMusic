@@ -25,7 +25,7 @@ from helpers.queues import QUEUE, add_to_queue, get_queue, clear_queue, pop_an_i
 from helpers.admin_check import *
 
 bot = Client(
-    "Anonymous",
+    "Finer X",
     bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"]
@@ -41,7 +41,7 @@ SUPPORT = os.environ["SUPPORT"]
 LIVE_CHATS = []
 
 START_TEXT = """<b>ʜᴇʏ {},</b> 🖤
-   🥀 <b>ᴛʜɪs ɪs ᴀɴᴏɴ ᴍᴜsɪᴄ ʙᴏᴛ.</b>
+   🥀 <b>ᴛʜɪs ɪs 𝙒𝙄𝙇𝘿 𝙓 𝘽𝙊𝙏.</b>
 
 <b>ᴀ ғᴀsᴛ & ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ's ᴠɪᴅᴇᴏᴄʜᴀᴛs.</b>
 
@@ -60,7 +60,7 @@ HELP_TEXT = """<b>» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «</b>
 » /join or /userbotjoin : ʀᴇǫᴜᴇsᴛs ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
 » /restart : ʀᴇsᴛᴀʀᴛs ᴛʜᴇ ʙᴏᴛ.
 
-🥵 <b><u>ᴍᴀᴅᴇ ʙʏ 𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦</u></b> 🥵"""
+🥵 <b><u>ᴍᴀᴅᴇ ʙʏ ★彡[ᴀᴀᴋᴀꜱʜ xᴅ]彡★ 🇮🇳</u></b> 🥵"""
 
 START_IMG = "https://telegra.ph/file/36be820a8775f0bfc773e.jpg"
 
@@ -68,14 +68,14 @@ START_BUTTONS = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                        "🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ 🥺", url="https://t.me/fallen_music_bot?startgroup=true")
+                        "🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ 🥺", url="https://t.me/wildxrobot?startgroup=true")
         ],
         [   
-            InlineKeyboardButton("🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=1356469075),
+            InlineKeyboardButton("🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=5351051497),
             InlineKeyboardButton("💔 sᴜᴩᴩᴏʀᴛ​ 💔", url=f"https://t.me/{SUPPORT}")
         ],
         [
-            InlineKeyboardButton("🙄 sᴏᴜʀᴄᴇ 🙄", url="https://github.com/AnonymousR1025/AnonMusic")
+            InlineKeyboardButton("🙄 sᴏᴜʀᴄᴇ 🙄", url="https://github.com/aakashxok/AnonMusic")
         ]
     ]
 )
@@ -274,7 +274,7 @@ async def help_cmd(_, message):
 async def start_group(_, message):
     await message.delete()
     fuk = "<b>ᴩᴏɴɢ ʙᴀʙʏ !</b>"
-    await message.reply_photo(photo="https://telegra.ph/file/d6ff45f5be2b42fcc2ffb.jpg", caption=fuk)
+    await message.reply_photo(photo="https://te.legra.ph/file/65a3ae52cc3b1398e9d6a.jpg", caption=fuk)
 
 
 @bot.on_message(filters.command(["join", "userbotjoin", "assistant", "ass"]) & filters.group)
